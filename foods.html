@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Restaurant Page</title>
+    <style>
+      section {
+        padding: 60px 0;
+      }
+
+      .hero {
+        background-image: url("https://images.pexels.com/photos/10749578/pexels-photo-10749578.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 2px 2px 5px black;
+      }
+      .menulist {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: larger;
+      }
+      .gallery-img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+</html>
+<body>
+  <!--navbar-->
+  <nav
+    class="navbar navbar-expand-md navbar-light fixed-top"
+    style="background-color: #eee0b3"
+  >
+    <div class="container-xxl">
+      <div class="navbar-brand">
+        <span class="fw-bolder" style="color: #120a0e; font-family: cursive"
+          ><i class="bi bi-fork-knife"></i> ALADDIN'S KITCHEN
+        </span>
+      </div>
+
+      <!--toggle button for mobile nav-->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main-nav"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end align-center"
+        id="main-nav"
+      >
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link" style="color: #120a0e"
+              >ABOUT US</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link" style="color: #120a0e">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallary" class="nav-link" style="color: #120a0e"
+              >GALLARY</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#review" class="nav-link" style="color: #120a0e"
+              >REVIEWS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" style="color: #120a0e"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="text-center my-5">
+      <h1 class="display-4" style="font-family: Georgia">
+        Welcome to Aladdin's Kitchen
+      </h1>
+      <p class="lead fw-bold" style="font-family: Arial, Helvetica, sans-serif">
+        Crafted with love;Seved with grace
+      </p>
+    </div>
+  </section>
+
+  <!--about us-->
+  <section id="about">
+    <div style="background-color: #eee0b3" class="ms-4 me-4 py-4">
+      <h2 style="font-family: Amaranth" class="fw-bold text-center">
+        <i class="bi bi-stars"></i>
+        ABOUT US
+      </h2>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 my-5 pe-5">
+          <p style="font-family: satisfy; font-size: larger">
+            Welcome to Aladdin’s Kitchen, where tradition meets taste in a
+            magical dining experience. Nestled in the heart of the city,
+            Aladdin’s Kitchen is more than just a hotel - it's a journey through
+            flavors, aromas, and ambiance inspired by the rich culinary heritage
+            of the Middle East. From the moment you step through our doors,
+            you'll be transported into a world of warm hospitality, elegant
+            interiors, and unforgettable food.
+          </p>
+          <h5 style="font-family: Amaranth" class="fw-bold">
+            At Aladdin’s Kitchen, we take pride in offering:
+          </h5>
+          <ul>
+            <li style="font-family: satisfy; font-size: larger">
+              ✨ Authentic Arabic and fusion cuisine, crafted by expert chefs
+            </li>
+            <li style="font-family: satisfy; font-size: larger">
+              🥘 Handpicked ingredients, ensuring freshness and quality in every
+              bite
+            </li>
+            <li style="font-family: satisfy; font-size: larger">
+              🏨 Comfortable and elegant accommodations, perfect for travelers
+              and families
+            </li>
+            <li style="font-family: satisfy; font-size: larger">
+              🕌 A cultural atmosphere, with Arabian-inspired décor and soothing
+              music
+            </li>
+          </ul>
+          <p style="font-family: satisfy; font-size: larger">
+            Whether you're here for a romantic dinner, a family stay, or a
+            relaxing weekend, we’re committed to making your experience truly
+            magical - just like the tales of Aladdin. Come dine, relax, and make
+            memories at Aladdin’s Kitchen, where every moment feels like a story
+            from the Arabian Nights.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://images.pexels.com/photos/17941764/pexels-photo-17941764.jpeg"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+
+  <section
+    id="menu"
+    class="menulist py-5 light"
+    style="background-color: #eee0b3"
+  >
+    <div class="text-center">
+      <h3 class="fw-bolder" style="font-size: xx-large">
+        <i class="bi bi-book-half"></i> OUR MENU
+      </h3>
+      <p style="font-style: italic">A feast fit for a sulthan!</p>
+    </div>
+    <div class="row my-5 g-5 justify-content-around align-items-center">
+      <div class="col-6 col-lg-4">
+        <img
+          src="https://i.pinimg.com/1200x/f8/4c/8f/f84c8f8c1f22161bef23a8f67ce35949.jpg"
+          class="img-fluid"
+          alt="hotel view"
+        />
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+                style="font-size: large"
+              >
+                STARTERS
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Hummus with Pita Bread</li>
+                  <li>Falafel Platter</li>
+                  <li>Stuffed Grape Leaves</li>
+                  <li>Arabic Lentil Soup</li>
+                  <li>Chicken Shawarma Bites</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                style="font-size: large"
+              >
+                MAIN COURSES
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Lamb Mandi</li>
+                  <li>Chicken Kabsa</li>
+                  <li>Grilled Shish Tawook</li>
+                  <li>Beef Kofta Kebab</li>
+                  <li>Vegetable Tagine with Couscous</li>
+                  <li>Arabian Mixed Grill Platter</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style="font-size: large"
+              >
+                BREADS & SIDES
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Freshly Baked Khubz</li>
+                  <li>Garlic Butter Naan</li>
+                  <li>Arabic Pickles</li>
+                  <li>Tabbouleh Salad</li>
+                  <li>Spiced Rice Pilaf</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style="font-size: large"
+              >
+                BEVERAGES
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Mint Lemonade</li>
+                  <li>Rose Milk</li>
+                  <li>Arabic Qahwa (coffee)</li>
+                  <li>Fresh Fruit Mocktails</li>
+                  <li>Iced Hibiscus Tea</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style="font-size: large"
+              >
+                DESSERTS
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Baklava</li>
+                  <li>Kunafa with Cream</li>
+                  <li>Basbousa (Semolina Cake)</li>
+                  <li>Stuffed Dates</li>
+                  <li>Pistachio Ice Cream</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--gallery-->
+  <section id="gallery" class="py-5">
+    <div style="background-color: #eee0b3" class="ms-4 me-4 py-4 mb-5 mt-5">
+      <h3
+        class="fw-bolder text-center"
+        style="font-family: Amarnath; font-size: xx-large"
+      >
+        <i class="bi bi-camera"></i>
+        GALLERY
+      </h3>
+    </div>
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img
+            src="https://images.pexels.com/photos/29300022/pexels-photo-29300022.jpeg"
+            class="gallery-img"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://images.pexels.com/photos/30507460/pexels-photo-30507460.jpeg"
+            class="gallery-img"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://images.pexels.com/photos/5638616/pexels-photo-5638616.jpeg"
+            class="gallery-img"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg"
+            class="gallery-img"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://images.pexels.com/photos/4543002/pexels-photo-4543002.jpeg"
+            class="gallery-img"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://images.pexels.com/photos/18157536/pexels-photo-18157536.jpeg"
+            class="gallery-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--review-->
+  <section id="review" style="background-color: #eee0b3">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2 class="lead text-black fw-bolder">
+          <i class="bi bi-box2-heart"></i> REVIEWS
+        </h2>
+        <p class="lead text-black">WHAT OUR COSTOMERS TELLS ABOUT US !</p>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <h5>
+                  Zara-
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </h5>
+              </div>
+
+              <p class="mb-1">
+                "The food was excellent, especially the grilled kofta. Slight
+                delay in service during peak hours, but the staff was very
+                polite and welcoming."
+              </p>
+            </div>
+            <div class="list-group-item py-3 my-3">
+              <div class="pb-2">
+                <h5 class="mb-1">
+                  Lia-
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </h5>
+              </div>
+
+              <p class="mb-1">
+                "A hidden gem! The kunafa here is the best I’ve had outside of
+                Dubai. Fresh, warm, and just the right amount of sweetness. Will
+                visit again!"
+              </p>
+            </div>
+            <div class="list-group-item py-3">
+              <div class="pb-2">
+                <h5 class="mb-1">
+                  Arsh-
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </h5>
+              </div>
+
+              <p class="mb-1">
+                "Great fusion of traditional Arabic dishes with a modern twist.
+                The mint lemonade was so refreshing. Would recommend for a
+                family dinner night."
+              </p>
+            </div>
+            <div class="list-group-item py-3 my-3">
+              <div class="pb-2">
+                <h5 class="mb-1">
+                  Zaid-
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </h5>
+              </div>
+
+              <p class="mb-1">
+                "From the moment we walked in, we were treated like royalty. The
+                service was impeccable, and the food was bursting with authentic
+                Middle Eastern flavors. The ambiance, the aroma, the soft music
+                - everything felt magical. Truly lives up to the name Aladdin’s
+                Kitchen!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div>
+      <h2
+        style="background-color: #eee0b3; font-family: Amarnath"
+        class="ms-4 me-4 py-4 mb-5 mt-5 text-center fw-bold"
+      >
+        <i class="bi bi-telephone"></i> Contact Us
+      </h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-4 input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-person"></i>
+              </span>
+
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+
+            <div class="mb-4 input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-file-earmark-person-fill"></i>
+              </span>
+
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="form-floating mb-4 mt-4">
+              <textarea
+                id="query"
+                class="form-control"
+                style="height: 140px"
+              ></textarea>
+              <label for="query" class="form-label">Message</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h5>Visit Us</h5>
+          <p>123 Spice Street, Food City</p>
+          <p>📞 +91 98238 43780</p>
+          <p>📧 contact@aladdin’skitchen.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="ms-3 me-3" style="background-color: #eee0b3">
+      <p class="mb-0 text-center">
+        &copy; 2025 Aladdin’s Kitchen. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</body>
