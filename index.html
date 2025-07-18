@@ -41,15 +41,12 @@
         object-fit: cover;
         border-radius: 10px;
       }
-      .black-bordered-table,
-      .black-bordered-table th,
-      .black-bordered-table td {
+      .compact-table {
+        width: 600px;
+        margin: auto;
         border: 2px solid black;
       }
-
-      .black-bordered-table {
-        border-collapse: collapse;
-      }
+      
     </style>
   </head>
 </html>
@@ -431,42 +428,52 @@
       </h3>
     </div>
     <div>
-      <table class="black-bordered-table table table-responsive ms-5 me-5">
-        <thead>
-          <tr style="background-color: #eee0b3" class="text-center">
-            <th scope="col">DAY</th>
-            <th scope="col">SUN</th>
-            <th scope="col">MON</th>
-            <th scope="col">TUE</th>
-            <th scope="col">WED</th>
-            <th scope="col">THURS</th>
-            <th scope="col">FRI</th>
-            <th scope="col">SAT</th>
-          </tr>
-        </thead>
+      <table class="table table-bordered compact-table">
         <tbody>
-          <tr>
-            <th scope="row">FROM</th>
-            <td>10.00 AM</td>
-            <td>10.00 AM</td>
-            <td>10.00 AM</td>
-            <td>10.00 AM</td>
-            <td>10.00 AM</td>
-            <td>HOLIDAY</td>
-            <td>10.00 AM</td>
+          <tr style="background-color: #eee0b3" class="text-center">
+            <th scope="row">Day</th>
+            <th scope="col">FROM</th>
+            <th scope="col">TO</th>
           </tr>
-          <tr>
-            <th scope="row">TO</th>
+          <tr class="text-center">
+            <th scope="row">SUN</th>
+            <td>10.00 AM</td>
             <td>12.00 PM</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="row">MON</th>
+            <td>10.00 AM</td>
             <td>11.00 PM</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="row">TUE</th>
+            <td>10.00 AM</td>
             <td>11.00 PM</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="row">WED</th>
+            <td>10.00 AM</td>
             <td>11.00 PM</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="row">THURS</th>
+            <td>10.00 AM</td>
             <td>11.00 PM</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="row">FRI</th>
             <td>HOLIDAY</td>
+            <td>HOLIDAY</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="row">SAT</th>
+            <td>10.00 AM</td>
             <td>10.00 PM</td>
           </tr>
         </tbody>
       </table>
+          
+            
     </div>
   </section>
 
