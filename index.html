@@ -41,9 +41,28 @@
         object-fit: cover;
         border-radius: 10px;
       }
-      .compact-table {
-        width: 600px;
+            .timing-table-content {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
         margin: auto;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 15px;
+        border-bottom: 1px solid;
+      }
+      .compact-table {
+       
         border: 2px solid black;
       }
       
@@ -418,7 +437,7 @@
   <section id="time" class="mb-5">
     <div
       class="text-center ms-4 me-4 py-4 mb-5 mt-5"
-      style="background-color: #eee0b3"
+      style="background-color: #eee0b3" timing-table-content
     >
       <h3
         class="fw-bolder text-center"
@@ -635,3 +654,4 @@
     crossorigin="anonymous"
   ></script>
 </body>
+
